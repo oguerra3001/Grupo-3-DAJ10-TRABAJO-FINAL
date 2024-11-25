@@ -1,0 +1,7 @@
+RECOMENDACIÓN: ejecutar consulta desde interfaz grafica PgAdmin
+
+*Para realizar desde Query tool
+COPY NombreTabla FROM "Ruta del CSV" DELIMITER ',' CSV HEADER;
+
+*Si la consulta anterior no funciona hacerlo desde PSQL Tool
+\COPY nombretabla FROM 'Ruta del CSV' WITH CSV HEADER;
